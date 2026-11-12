@@ -15,10 +15,19 @@ AUTHOR = "Peter Saddington"
 AUTHOR_URL = "https://staas.fund/peter-saddington"   # his profile. Used in the structured data only
 # Where the author's name links to on the page itself: his account of why he built the site.
 STORY_URL = BASE_URL + "#why"
-CONTACT_URL = "https://staas.fund/contact"
+# Where "write to us" links go: the contact section of the About page, on this site.
+CONTACT_URL = BASE_URL + "about/#contact"
+# The one email address the site prints. The build stops on any other address in the output.
+CONTACT_EMAIL = "peters@staas.fund"
+CONTACT_SUBJECT = "Myoepithelial%20carcinoma%20reference"
+ABOUT_URL = BASE_URL + "about/"
+CHANGES_URL = BASE_URL + "changes/"
 POST_URL = "https://theagilevc.substack.com/p/today-im-supposed-to-die-76"
 POST2_URL = "https://theagilevc.substack.com/p/caal-cancer-as-a-lifestyle-94"
 TWITTER = "@agilepeter"
+# The image shown when a link is shared. Drawn by site/og_card.py. Give it a new name whenever it
+# changes: staas.fund has browsers keep a PNG for seven days.
+OG_IMAGE = "static/og-2.png"
 # Dates of things that happened once. They must not move when the site is rebuilt.
 FIRST_PUBLISHED = "2026-11-11"            # the day the site went live
 SOURCE_CHECK_DATE = "11 November 2026"    # the day the cited claims were checked against their sources

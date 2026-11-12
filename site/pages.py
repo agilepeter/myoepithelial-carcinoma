@@ -434,9 +434,53 @@ def new_page(B, S):
                   "What's new", "What's new", "New papers, and what each search of the indexes added.", sections, ld_type="CollectionPage")
 
 
+NUMBER_WORDS = ["None", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",
+                "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"]
+
+
+def site_facts(B, S):
+    """The values the About and Changes pages fill in. The counts come from the source check itself."""
+    C, checks = B.C, S["verification"]
+    wrong = sum(1 for v in checks if v["verdict"] in ("contradicted", "not found in the source text available"))
+    facts = dict(S["ctx"])
+    facts.update({
+        "author": B.esc(C.AUTHOR), "story_url": C.STORY_URL, "about_url": C.ABOUT_URL, "changes_url": C.CHANGES_URL,
+        "contact_email": C.CONTACT_EMAIL, "contact_subject": C.CONTACT_SUBJECT,
+        "n_checked": len(checks), "n_wrong_word": NUMBER_WORDS[wrong] if wrong < len(NUMBER_WORDS) else str(wrong),
+        "n_full": sum(1 for v in checks if v["checked_against"] != "abstract only"),
+        "n_abstract": sum(1 for v in checks if v["checked_against"] == "abstract only"),
+    })
+    return facts
+
+
+def about_page(B, S):
+    facts = site_facts(B, S)
+    sections = [(sid, heading, html.format(**facts)) for sid, heading, html in P.ABOUT]
+    return render(B, S, "about", "About the Myoepithelial Carcinoma Reference: Who, How, Corrections",
+                  "Who compiles this reference on myoepithelial carcinoma and how: sources, the use of AI, review "
+                  "status, independence, corrections, privacy and contact.",
+                  "About", "About this reference",
+                  "Who compiles it, how it is made, how far it has been checked, and how to reach the person behind it.",
+                  sections, ld_type="AboutPage")
+
+
+def changes_page(B, S):
+    facts = site_facts(B, S)
+    sections = []
+    for iso_date, items in P.CHANGES:
+        sections.append(("d" + iso_date, B.long_date(iso_date), '<ul class="plain-list">%s</ul>' % "".join(
+            "<li>%s</li>" % item.format(**facts) for item in items)))
+    return render(B, S, "changes", "Myoepithelial Carcinoma Reference: Corrections and Changes",
+                  "A dated record of every correction and change of substance made to this reference on "
+                  "myoepithelial carcinoma, with what was wrong and what replaced it.",
+                  "Changes", "Corrections and changes",
+                  "What has been corrected or changed, and when. Newest first.", sections, ld_type="WebPage")
+
+
 def build_all(B, S):
     urls = site_pages(B, S)
-    for page in (cases_page, centers_page, report_page, support_page, models_page, summary_page, new_page):
+    for page in (cases_page, centers_page, report_page, support_page, models_page, summary_page, new_page,
+                 about_page, changes_page):
         urls.append(page(B, S))
     import pages_more
     return urls + pages_more.build_more(B, S)

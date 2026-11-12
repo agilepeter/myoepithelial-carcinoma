@@ -554,6 +554,7 @@ def build():
          "author": {"@type": "Person", "name": C.AUTHOR, "url": C.AUTHOR_URL, "sameAs": C.AUTHOR_PROFILES},
          "publisher": {"@type": "Organization", "name": C.SITE_NAME, "url": C.BASE_URL.split("/" + SLUG)[0] + "/"},
          "audience": {"@type": "MedicalAudience", "audienceType": "Patient"}, "isAccessibleForFree": True,
+         "publishingPrinciples": C.ABOUT_URL,
          "about": {"@type": "MedicalCondition", "@id": C.BASE_URL + "#condition", "name": "Myoepithelial carcinoma",
                    "alternateName": ["Malignant myoepithelioma", "MECA"],
                    "sameAs": ["https://www.wikidata.org/wiki/Q18556495"],
@@ -609,6 +610,8 @@ def build():
         <a href="cases/">{n_cases} published cases</a> <a href="centers/">Centers</a>
         <a href="pathology/">Stains and look-alikes</a> <a href="models/">Cell lines</a>
         <a href="#resources">Codes, data and funding</a> <a href="new/">What's new</a> <a href="feed.xml">Feed</a></p>
+        <p><span class="idx-label">About</span> <a href="about/">About this reference</a>
+        <a href="changes/">Corrections and changes</a> <a href="about/#contact">Contact</a></p>
       </nav>
     </div>
     <aside class="infobox" id="key-facts" aria-label="Key facts">
@@ -752,7 +755,7 @@ def build():
         '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s/"><a href="%s/">Open the page</a>\n'
         % (SLUG, SLUG), encoding="utf-8", newline="\n")
     leaked = sorted({"%s: %s" % (f.relative_to(DIST), m) for f in DIST.rglob("*") if f.is_file() and f.suffix != ".png"
-                     for m in EMAIL.findall(f.read_text(encoding="utf-8", errors="ignore"))})
+                     for m in EMAIL.findall(f.read_text(encoding="utf-8", errors="ignore")) if m != C.CONTACT_EMAIL})
     if leaked:
         raise SystemExit("email address in the built site, remove it at the source:\n  " + "\n  ".join(leaked[:20]))
     print("built %s: %d references, %d papers in directory, %d more pages, index %d KB, directory %d KB"
@@ -790,7 +793,7 @@ def head(title, description, url, ld, rel, iso):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
-<meta property="og:image" content="{base}static/og.png">
+<meta property="og:image" content="{base}{og_image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Myoepithelial carcinoma: a reference to the published research">
@@ -804,11 +807,12 @@ def head(title, description, url, ld, rel, iso):
 <meta name="twitter:site" content="{twitter}">
 <meta name="twitter:title" content="{short}">
 <meta name="twitter:description" content="{description}">
-<meta name="twitter:image" content="{base}static/og.png">
+<meta name="twitter:image" content="{base}{og_image}">
 <link rel="icon" href="{icon}">
 <link rel="stylesheet" href="{rel}static/style.css">
 {scripts}""".format(title=esc(title), description=esc(description), keywords=esc(", ".join(C.KEYWORDS)),
                     author=esc(C.AUTHOR), url=url, rel=rel, base=C.BASE_URL, site=esc(C.SITE_NAME), iso=iso, published=C.FIRST_PUBLISHED,
+                    og_image=C.OG_IMAGE,
                     tags=tags, twitter=C.TWITTER, short=esc(C.SHORT_TITLE), icon=icon, scripts=scripts)
 
 
@@ -825,6 +829,9 @@ def nav(rel):
     <details class="menu"><summary>For researchers</summary><div class="menu-panel">
       <a href="{rel}#outcomes">Survival and outcomes</a><a href="{rel}papers/">Papers</a><a href="{rel}cases/">Published cases</a><a href="{rel}centers/">Centers and researchers</a><a href="{rel}pathology/">Stains and look-alikes</a><a href="{rel}models/">Cell lines and models</a><a href="{rel}new/">What's new</a>
     </div></details>
+    <details class="menu"><summary>About</summary><div class="menu-panel">
+      <a href="{rel}about/">About this reference</a><a href="{rel}changes/">Corrections and changes</a><a href="{rel}#method">Method and limits</a><a href="{rel}about/#contact">Contact</a>
+    </div></details>
   </nav>
   <form class="mast-search" action="{rel}search/" method="get" role="search">
     <label for="mast-q" style="position:absolute;left:-9999px">Search</label>
@@ -837,14 +844,15 @@ def nav(rel):
 def footer(ctx):
     return """<footer><div class="page">
   <p>A personal, non-commercial project by <a href="{author_url}">{author}</a>: an attempt to gather every
-  verifiable detail about myoepithelial carcinoma into one place.</p>
+  verifiable detail about myoepithelial carcinoma into one place. <a href="{about}">About this reference</a>.</p>
   <p>Built from open sources only. No paywalled article was accessed.</p>
-  <p>Not medical advice. Updated {build_date}. <a href="{contact}">Corrections and additions</a>.</p>
+  <p>Not medical advice. Updated {build_date}. <a href="{changes}">Corrections and changes</a>.
+  <a href="{contact}">Contact</a>.</p>
   <p>Data free to reuse under <a href="{license_url}" rel="license">{license_short}</a>. Scripts and catalog:
   <a href="{repo_url}">{repo_label}</a>.</p>
 </div></footer>""".format(author=esc(C.AUTHOR), author_url=C.STORY_URL, contact=C.CONTACT_URL, build_date=ctx["build_date"],
                           license_url=C.DATA_LICENSE_URL, license_short=C.DATA_LICENSE_SHORT,
-                          repo_url=C.REPO_URL, repo_label=C.REPO_LABEL)
+                          repo_url=C.REPO_URL, repo_label=C.REPO_LABEL, about=C.ABOUT_URL, changes=C.CHANGES_URL)
 
 
 PAGE = """<!DOCTYPE html>

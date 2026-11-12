@@ -19,6 +19,32 @@
     if (e.key === 'Escape') menus.forEach(function (m) { m.open = false; });
   });
 
+  // Tables on narrow screens. A table whose cells hold sentences is marked so the stylesheet can set
+  // each row out as a record, and each cell is given its column heading. Other tables keep their
+  // grid: if one is wider than its space, its wrapper is marked so a note says it scrolls.
+  var tables = document.querySelectorAll('table.data-table');
+  tables.forEach(function (t) {
+    if (t.closest('.table-view')) return;
+    var heads = Array.prototype.map.call(t.querySelectorAll('thead th'), function (th) { return th.textContent.trim(); });
+    if (heads.length < 3) return;
+    var rows = Array.prototype.slice.call(t.querySelectorAll('tbody tr'));
+    var wordy = rows.slice(0, 20).some(function (tr) {
+      return Array.prototype.some.call(tr.children, function (c) { return c.textContent.trim().length > 60; });
+    });
+    if (!wordy) return;
+    t.classList.add('stack');
+    rows.forEach(function (tr) {
+      Array.prototype.forEach.call(tr.children, function (cell, i) { if (i > 0 && heads[i]) cell.setAttribute('data-label', heads[i]); });
+    });
+  });
+  function markScrolling() {
+    document.querySelectorAll('.table-wrap').forEach(function (w) {
+      w.classList.toggle('scrolls', w.scrollWidth > w.clientWidth + 1);
+    });
+  }
+  markScrolling();
+  window.addEventListener('resize', markScrolling);
+
   // Mark the section being read in the contents column.
   var tocLinks = document.querySelectorAll('.sidebar .toc a');
   if (tocLinks.length && 'IntersectionObserver' in window) {

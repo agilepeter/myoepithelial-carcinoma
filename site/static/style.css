@@ -8,7 +8,7 @@
   --paper-2: #f2f0e9;
   --ink: #1c1b19;
   --ink-2: #47443e;
-  --ink-3: #736e65;
+  --ink-3: #6d685f;
   --rule: #d9d4c9;
   --accent: #0e4a5b;
   --on-accent: #ffffff;
@@ -202,8 +202,8 @@ details.table-view .data-table { min-width: 0; margin-top: 8px; font-size: 14px;
 }
 
 /* references */
-.fn { font-family: var(--sans); font-size: 0.62em; line-height: 0; margin-left: 1px; }
-.fn a { text-decoration: none; padding: 0 1px; }
+.fn { font-family: var(--sans); font-size: 0.68em; line-height: 0; margin-left: 1px; }
+.fn a { text-decoration: none; padding: 0 2px; }
 .fn a:hover { text-decoration: underline; }
 .references ol { padding-left: 1.6em; font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--ink-2); }
 .references li { margin-bottom: 8px; }
@@ -429,6 +429,7 @@ footer p { margin: 0 0 4px; }
   --accent: #0e4a5b;
   --accent-deep: #0a3947;
   --ochre: #b4601f;
+  --ochre-text: #9e5316;
   --tint-teal: #e7eff0;
   --tint-teal-line: #c6d8db;
   --tint-warm: #f6efe1;
@@ -467,7 +468,7 @@ footer p { margin: 0 0 4px; }
 .site-index { display: block; border: 0; padding: 0; margin: 14px 0 0; border-top: 1px solid var(--tint-teal-line); padding-top: 10px; }
 .site-index p { margin: 0 0 5px; font-family: var(--sans); font-size: 14px; line-height: 1.65; color: var(--ink-2); }
 .site-index a { margin-right: 12px; white-space: nowrap; }
-.idx-label { display: inline-block; min-width: 108px; font-size: 11.5px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 700; color: var(--ochre); }
+.idx-label { display: inline-block; min-width: 108px; font-size: 11.5px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 700; color: var(--ochre-text); }
 
 .infobox { background: var(--paper); border: 1px solid var(--tint-teal-line); font-family: var(--sans); margin-top: -34px; }
 .infobox-title { background: var(--accent); color: #fff; font-family: var(--serif); font-size: 18px; padding: 8px 14px; text-align: center; }
@@ -483,14 +484,14 @@ footer p { margin: 0 0 4px; }
 .sidebar .toc { border-left: 3px solid var(--tint-teal); padding-left: 14px; }
 .toc h2 { color: var(--accent); }
 .toc a.current { color: var(--accent-deep); }
-.toc a.current::before { color: var(--ochre); }
+.toc a.current::before { color: var(--ochre-text); }
 
 /* sections */
 .section { border-top: 3px solid var(--accent); margin-top: 52px; }
-.sec-num { color: var(--ochre); }
+.sec-num { color: var(--ochre-text); }
 .sub-heading { color: var(--accent-deep); }
 .deck { color: var(--accent); }
-.byline { color: var(--ochre); font-weight: 600; }
+.byline { color: var(--ochre-text); font-weight: 600; }
 .callout { background: var(--tint-warm); border-left: 4px solid var(--ochre); padding: 14px 18px; }
 .cta-box { background: var(--tint-teal); border: 0; border-left: 4px solid var(--accent); padding: 18px 20px; }
 
@@ -513,7 +514,7 @@ footer p { margin: 0 0 4px; }
 .compare-cell.now { background: rgba(14, 74, 91, 0.04); padding-left: 10px; padding-right: 10px; }
 .family, .spec-card { border-top-color: var(--accent); }
 .spec-card.malignant { border-top-color: var(--ochre); }
-.plan li::before, .step3-n, .tl-year, .rank-pos { color: var(--ochre); }
+.plan li::before, .step3-n, .tl-year, .rank-pos { color: var(--ochre-text); }
 .calm-do { color: var(--accent-deep); }
 .case-head { color: var(--accent-deep); }
 .report-paper { border-color: var(--accent); border-top: 4px solid var(--accent); }
@@ -564,4 +565,66 @@ footer a { color: #fff; }
 @media (max-width: 640px) {
   .standfirst { font-size: 17px; }
   .title-block { padding: 16px 0 18px; }
+}
+
+/* ---- detail pass, 2026-11-12: type, phones, print ---- */
+
+/* Headings break into even lines. Paragraphs avoid a last line of one word. */
+h1, h2, h3, .standfirst, .deck { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+
+/* A comfortable measure for running text on wide screens. Tables, charts and lists keep the full column. */
+@media (min-width: 900px) {
+  .section > p, .section > ul.plain-list, .section > ol.plain-list, .section > .deck { max-width: 35em; }
+}
+
+/* A wide table that still scrolls sideways says so, and keeps its first column in view.
+   app.js adds .scrolls when the table is wider than the space it has. */
+.table-wrap.scrolls::before { content: "Scroll sideways to see every column"; display: block; font-family: var(--sans);
+  font-size: 12.5px; color: var(--ink-3); margin-bottom: 4px; }
+.table-wrap.scrolls .data-table th:first-child, .table-wrap.scrolls .data-table td:first-child { position: sticky; left: 0; z-index: 1; }
+.table-wrap.scrolls .data-table td:first-child { background: var(--paper); }
+.table-wrap.scrolls .data-table tbody tr:nth-child(even) td:first-child { background: #f3f4f1; }
+
+@media (max-width: 640px) {
+  /* Tables. One that carries sentences becomes a list of records: each row a block, each cell under
+     its column heading. app.js marks those tables with .stack and copies the headings onto the cells.
+     Tables of short values keep their grid and scroll. Without the script every table scrolls. */
+  .data-table { min-width: 0; }
+  .table-wrap > .data-table:has(th:nth-child(3)):not(.stack) { min-width: 480px; }
+  .data-table.stack, .data-table.stack tbody, .data-table.stack tr, .data-table.stack td, .data-table.stack tbody th { display: block; width: auto; }
+  .data-table.stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .data-table.stack tr { padding: 12px 0 11px; border-bottom: 1px solid var(--rule); }
+  .data-table.stack td, .data-table.stack tbody th { padding: 0 0 7px; border: 0; background: none; }
+  .data-table.stack tbody tr:nth-child(even) td { background: none; }
+  .data-table.stack tr > :last-child { padding-bottom: 0; }
+  .data-table.stack [data-label]::before { content: attr(data-label); display: block; font-family: var(--sans); font-size: 11.5px;
+    font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--accent); margin-bottom: 1px; }
+  .data-table.stack tr > :first-child { font-weight: 700; font-size: 17px; line-height: 1.35; padding-bottom: 8px; }
+  .data-table.stack td:empty { display: none; }
+  .data-table.stack .num { white-space: normal; font-size: 16px; }
+
+  /* Charts are drawn 860 units wide. On a phone that shrinks their labels past reading, so the labels are set larger. */
+  .chart .tick, .chart .dlabel { font-size: 23px; }
+
+  /* Things to tap: room for a finger. */
+  .site-index a { display: inline-block; padding: 5px 0; }
+  .site-index p { margin-bottom: 2px; }
+  .toc-details summary, details.table-view summary { padding: 11px 0; }
+  .toc-details ol a { display: inline-block; padding: 5px 0; }
+  .mast-langs a { display: inline-block; padding: 9px 5px; margin-left: 4px; }
+  footer p { line-height: 1.9; }
+
+  /* The four menus share the width of the screen, and each opens across it, under the row. */
+  .menus { position: relative; width: 100%; justify-content: space-between; }
+  .menu { position: static; }
+  .menu summary { padding: 11px 4px; font-size: 13.5px; }
+  .menu-panel, .menu:last-child .menu-panel { left: 0; right: 0; min-width: 0; }
+  .menu-panel a { padding: 11px 16px; }
+}
+
+/* Very narrow phones: two menus to a row. */
+@media (max-width: 380px) {
+  .menus { display: grid; grid-template-columns: 1fr 1fr; }
+  .menu summary { padding: 9px 4px; }
 }

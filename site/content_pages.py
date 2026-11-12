@@ -227,3 +227,138 @@ SUMMARY_FORM = [
     "Surgeries (date, site, surgeon)", "Radiotherapy or drug treatment", "Recurrences or new tumors (date, site)",
     "Current surveillance schedule", "Treating doctors and centers", "Questions for this visit",
 ]
+
+
+# ── About this reference ────────────────────────────────────────────────────
+# Who is behind the site and how it is kept. These sentences are about the site itself, so most
+# carry no source. {name} placeholders are filled in by pages.about_page().
+
+ABOUT = [
+    ("who", "Who compiles it", """
+<p>{author}, a patient. He was diagnosed with myoepithelial carcinoma of the skin in September 2021[[post]]. He is not
+a doctor or a scientist, and nothing here should be read as if he were.</p>
+<p>His account of why he built the reference is <a href="{story_url}">the last section of the main page</a>.</p>"""),
+    ("what", "What it is, and what it is not", """
+<p>It is a reference to the published research on one rare cancer. It reports what studies found and names each
+study, so that a reader can go to the source.</p>
+<p>It is not medical advice. It does not recommend a treatment, a doctor or a hospital. Figures for groups of
+patients cannot say what will happen to one person. Decisions belong with you and your doctors.</p>"""),
+    ("made", "How it is made", """
+<ul class="plain-list">
+<li><strong>Open sources only.</strong> The records come from free public databases: PubMed, Europe PMC, OpenAlex,
+Semantic Scholar, ClinicalTrials.gov and the others named on each page. No paywalled article was accessed.</li>
+<li><strong>Every figure has a source.</strong> Each factual sentence carries a numbered reference. The program that
+builds the pages stops if a sentence points to a source that is not in the catalog.</li>
+<li><strong>Compiled with AI.</strong> One person could not read {n_total} records. AI models were used to gather and
+sort the records, to help write the pages, and to extract the case registry, the treatment table, the trial list and
+the pathology tables from abstracts. Pages built that way say so at the top.</li>
+<li><strong>Checked against the sources.</strong> On {check_date} a model checked {n_checked} cited claims against
+their sources. {n_wrong_word} were wrong or not supported, and were corrected.
+<a href="{changes_url}">The list is public</a>.</li>
+<li><strong>Translations.</strong> The Spanish, Chinese and Japanese pages were translated by a model and checked by
+translating them back into English. No clinician who speaks the language has reviewed them, and each page says so.</li>
+</ul>
+<p>The method in full, with its limits, is in <a href="{base_url}#method">Method and limits</a> on the main page.</p>"""),
+    ("review", "Who has reviewed it", """
+<p>No clinician has reviewed this site. When one does, their name and the date will be given here and on the pages
+they read.</p>
+<p>If you treat or study this disease and would read part of it, <a href="#contact">please write</a>. An hour on the
+sections about diagnosis, genetics, outcomes and treatment would help most.</p>"""),
+    ("independence", "Independence", """
+<p>This is a personal project. It carries no advertising, has no sponsor and sells nothing. No link on it earns a
+commission.</p>
+<p>The organizations, hospitals, trials and researchers named here are listed because they appear in the public
+record. Being listed is not an endorsement, and none of them has reviewed or paid for anything on the site.</p>
+<p>The pages are hosted on staas.fund, the compiler's own website, which is otherwise about his work.</p>"""),
+    ("corrections", "Corrections", """
+<p>If something here is wrong, out of date or missing, <a href="#contact">write</a>. A paper, a trial, a registry, a
+research group or a mistake in a number are all welcome, from patients and families as much as from clinicians.</p>
+<p>A reported error is checked against the source. If it is an error, it is corrected, and the correction is recorded
+with its date in <a href="{changes_url}">Corrections and changes</a>. Corrections are not made silently.</p>"""),
+    ("updates", "How it is kept current", """
+<p>Each page shows the date it was last updated. The records were last downloaded from the public databases on
+{harvest_date}. Papers added by a later download are listed on <a href="{base_url}new/">What is new</a> and in the
+<a href="{base_url}feed.xml">feed</a>.</p>"""),
+    ("privacy", "Privacy", """
+<p>The site has no accounts, no forms and no advertising, and it sets no cookies of its own.</p>
+<p>It is served through Cloudflare, the network that staas.fund uses. Like any web host, Cloudflare sees each
+request, including the address of the computer it came from. It adds two things to every page: a script that checks
+whether a visitor is automated traffic, which sets one cookie named cf_clearance, and Cloudflare Web Analytics, which
+counts page views without cookies.</p>
+<p>Search runs in your browser, against a file the site downloads. The words you search for appear in the page
+address, so they reach the server like any other address you visit.</p>
+<p>If you write, your message and your email address go to {author}. They are used to answer you and to correct the
+site, and for nothing else.</p>"""),
+    ("reuse", "Reuse and citation", """
+<p>The catalog, the case registry and the other data files may be reused under the
+<a href="{license_url}" rel="license">{license_name}</a> license. The scripts that gather the records and build the
+pages are public at <a href="{repo_url}">{repo_label}</a>.</p>
+<p>To cite: Saddington P. Myoepithelial carcinoma: a reference to the published research. {base_url} Updated
+{build_date}.</p>
+<p>The text of the pages may be quoted with a link. Please ask before republishing it.</p>"""),
+    ("contact", "Contact", """
+<p>Write to <a href="mailto:{contact_email}?subject={contact_subject}">{contact_email}</a>.</p>
+<p>It helps to say which page you mean and, for a correction, where the right figure can be read. Mail about this
+reference is read by {author}. He cannot give medical advice or comment on anyone's care.</p>"""),
+]
+
+
+# ── Corrections and changes ─────────────────────────────────────────────────
+# Newest first. Add an entry whenever the site changes in substance: a correction, a new page, a
+# new download of the records. Say what changed and why, in plain words. A sentence about what a
+# study found carries its [[key]] like anywhere else.
+
+CHANGES = [
+    ("2026-11-12", [
+        "Added this page and <a href=\"{about_url}\">About this reference</a>: who compiles the site, how it is made, "
+        "how corrections are handled, privacy and contact.",
+        "The data may now be reused under the {license_name} license, and the scripts and the catalog were published "
+        "at <a href=\"{repo_url}\">{repo_label}</a>.",
+        "Translations. A separate model translated the Spanish, Chinese and Japanese pages back into English without "
+        "seeing the original, and the results were compared. 29 sentences were corrected. In Chinese and Japanese, a "
+        "word used for \u201cpatient organization\u201d also means \u201ctissue\u201d. The Chinese said a tumor had "
+        "\u201cinfiltrated the adjacent margin\u201d where the English says \u201cinvasion close to the margin\u201d. "
+        "Every number matched the English.",
+        "Dates. \u201cRetrieved\u201d, the date on which trial status was recorded and the date of the source check had "
+        "been following the day the pages were built. Each now shows the day the thing happened.",
+        "An email address quoted inside a public dataset description was removed from the open data.",
+        "The machine-readable description of the main page no longer says the page was \u201clast reviewed\u201d. No "
+        "clinician has reviewed it.",
+        "The author\u2019s name at the foot of each page now goes to his account of why he built the site. It had "
+        "gone to his profile on another part of staas.fund.",
+        "Contact moved from a general contact page to an address for this reference.",
+        "Reading on a phone. A table that holds sentences is now set out as one record under another, so no column "
+        "is cut off. Chart labels are larger, and the menus open across the screen. Two text colors were darkened to "
+        "meet the contrast guideline for readers with low vision.",
+        "The image shown when a link is shared said \u201cevery published paper\u201d. It now gives the count of papers "
+        "that name the disease. The catalog is not complete, as Method and limits says.",
+    ]),
+    ("2026-11-11", [
+        "The reference was published.",
+        "Source check. A model checked {n_checked} cited claims against their sources: {n_full} against the full paper "
+        "and {n_abstract} against the abstract. {n_wrong_word} were wrong or not supported by the source cited. The "
+        "corrections follow.",
+        "\u201c40 to 45% of tumors recurred\u201d in the adult soft-tissue series was a figure that paper quotes from "
+        "earlier work. It was replaced with the series\u2019 own result: 13 of 24 patients (54.2%) relapsed, 3 locally "
+        "and 10 with metastases[[chamberlain2020]].",
+        "Survival at 15 years in the salivary registry study was changed from 39% to 38%, the figure in the full "
+        "text. The shares with lymph node and distant spread now say they are of patients with a recorded stage, and "
+        "the benefit of radiotherapy now says it appeared only after adjustment[[luo2022]].",
+        "The proposal that some of these tumors are sarcomas is now limited, as in the paper, to malignant tumors with "
+        "EWSR1 or FUS fusions. \u201cBiologically unrelated\u201d became \u201cepigenetically unrelated\u201d, and the "
+        "outcomes table now says that 69 of the 185 tumors had survival data[[michal2026]].",
+        "A figure of 27% from a salivary series is now given as 12 of the 44 patients with follow-up[[kong2015]].",
+        "ATF1 as a partner gene of EWSR1 is now cited to the paper that reports it[[flucke2012]].",
+        "The definition, the older name, the registry code and the separation from epithelial-myoepithelial carcinoma "
+        "are each cited to a source that states them. The code is given as 8982, without \u201c/3\u201d.",
+        "Two statements about the skin form were removed because the sources do not make them: that it is the rarest "
+        "and least studied form, and that it was recognized only in 2003 and 2004[[gillis2026]][[hornick2004]][[mentzel2003]].",
+        "\u201cThe largest soft-tissue series\u201d became \u201ca 101-tumor soft-tissue series\u201d[[hornick2003]].",
+        "\u201cDiagnosis often involves a second opinion\u201d became the finding it rested on: in one series most "
+        "cases had first been given a different diagnosis[[savera2000]].",
+        "The National Cancer Database survival figures are no longer called overall survival. The abstract does not say "
+        "which kind of survival they are[[tandon2026]].",
+        "The incidence rates for 2012 were added from the full text of the registry study[[zhang2017]].",
+    ]),
+]
+
