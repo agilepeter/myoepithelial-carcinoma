@@ -103,7 +103,7 @@ Papers from a later harvest need the same reading.
 
 ## Reuse
 
-- The scripts are under the MIT license. See `LICENSE`.
+- The scripts in `harvest/` and `site/` are under the MIT license. See `LICENSE`.
 - The data this project compiled and added is under Creative Commons
   Attribution 4.0. Records taken from the public databases keep the terms of
   those databases. See `LICENSE-DATA.md`.
