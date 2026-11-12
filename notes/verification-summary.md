@@ -1,0 +1,65 @@
+# Verification summary
+
+141 distinct (key, claim) pairs were checked across 34 papers: 93 confirmed, 35 confirmed in substance with different wording, 10 not found in the source text available, 3 contradicted. Details for every pair are in `verification.jsonl`.
+
+## Contradicted
+
+1. **chamberlain2020.** The site says that in 24 adults treated at one sarcoma unit, 40 to 45% of tumors recurred despite optimal treatment (content.py outcomes table; content_pages.py soft-tissue outcomes). The full text gives 40 to 45% as a background figure from earlier papers. In this series 13 of 24 patients (54.2%) relapsed, 3 locally and 10 with metastases, and 10 (41.7%) died of the disease. Recommended table cell: "Relapse in 13 of 24 (54%), 10 of them with metastases. Median progression-free survival on first-line chemotherapy 9.3 months." Recommended sentence: "In 24 adults treated at one sarcoma unit, 13 (54%) relapsed, three locally and 10 with metastases[[chamberlain2020]]."
+
+2. **luo2022.** The site says 39% of SEER major salivary gland patients were alive at 15 years (content.py outcomes table; content_pages.py salivary outcomes). The full-text results give 38.1% (95% CI 27.4% to 52.8%) at 180 months; only the abstract says 39%. Recommended wording: "53% alive at 10 years and 38% at 15."
+
+3. **michal2026.** The site says one 2026 study argues that fusion-positive tumors outside the salivary glands are sarcomas (content.py open-questions). The paper proposes this only for malignant tumors with EWSR1 or FUS fusions. It classes PLAG1-rearranged skin tumors, which are also fusion-positive, as cutaneous mixed tumors or myoepitheliomas, "true analogs" of the salivary tumors. Recommended wording: "One 2026 study argues that malignant tumors with EWSR1 or FUS fusions are better classified as sarcomas, while PLAG1-rearranged skin tumors belong with the salivary gland tumors[[michal2026]]."
+
+## Not found in the source text available
+
+4. **savera2000 and jo2015.** The printable summary's definition says the disease is also called malignant myoepithelioma, has code ICD-O-3 8982/3, and is distinct from epithelial-myoepithelial carcinoma (content_pages.py SUMMARY_FACTS Definition). Neither abstract mentions the older name, any ICD-O code, or epithelial-myoepithelial carcinoma. Recommended wording: "Malignant tumor made only of myoepithelial cells[[savera2000]]; also called malignant myoepithelioma[[schurch1985]]. ICD-O-3 morphology code 8982[[tandon2026]]. Distinct from epithelial-myoepithelial carcinoma[[skalova2015]]." No supplied paper gives the "/3" suffix, so drop it or cite [[vocab]].
+
+5. **jo2015.** The site says epithelial-myoepithelial carcinoma is a separate diagnosis (content.py QUICK "Not the same as"). The abstract never mentions epithelial-myoepithelial carcinoma, and the full text could not be fetched. Recommended wording: "Epithelial-myoepithelial carcinoma, which is a separate diagnosis[[skalova2015]], and myoepithelioma, which is the benign counterpart[[jo2015]]." The skalova2015 abstract lists it as a separate tumor category; the kong2015 full text would also serve.
+
+6. **jo2015.** The site says myoepithelial carcinoma is "the current name at every site" (content.py names table). The abstract uses the term for skin and soft-tissue tumors only and says nothing about naming elsewhere. Recommended wording: "The name used in recent papers on soft-tissue[[jo2015]] and salivary[[kong2015]] tumors."
+
+7. **jo2015.** The diagnosis lead says "and often a second opinion" (content.py LEADS diagnosis). The abstract does not mention second opinions, consultation or misdiagnosis. Recommended wording: "A panel of stains under the microscope, usually keratin with S-100[[jo2015]]. In one series most tumors had first been given another diagnosis[[savera2000]]."
+
+8. **antonescu2010 and michal2026.** ATF1 is listed as an EWSR1 partner in two places that cite only these two papers (content.py FUSION_FAMILIES EWSR1 and FUS family; content_pages.py SUMMARY_FACTS Genetics). ATF1 appears in neither full text. The support is flucke2012. Recommended fix: change the sources to "[[antonescu2010]][[flucke2012]][[michal2026]]" in both places.
+
+9. **gillis2026.** The site calls the skin form "the rarest form" and "the rarest and least studied" (content.py LEADS skin and the "why" section; content_pages.py skin standfirst). The paper says primary cutaneous cases are rare, with fewer than 30 reported, and makes no comparison with other sites. Recommended wording: "A very rare form: 26 reported cases of primary skin carcinoma as of 2026[[gillis2026]]." and "The skin form I have is very rare, with fewer than 30 reported cases[[gillis2026]]."
+
+10. **hornick2004 and mentzel2003.** The site says skin tumors of this kind were "only recognized as a group in 2003 and 2004" (content.py skin section; content_pages.py skin "What is known"). hornick2004 says they "have only recently been recognized", which places recognition before that series. mentzel2003 says the concept "is still debatable and not commonly accepted". Recommended wording: "Yet purely myoepithelial tumors of the skin were still a recently recognized and debated category when two series, of 20 and 14 skin tumors, were published in 2003 and 2004[[mentzel2003]][[hornick2004]]." Note also that 9 of the 20 tumors in mentzel2003 were duct-forming mixed tumors.
+
+11. **devenyi1957.** The timeline says the 1957 report appeared in "a German pathology journal" (content.py TIMELINE 1957). The supplied record has only a translated title and a year, with no abstract, journal or language. Recommended wording: "An early report describes a malignant myoepithelioma of the sweat glands[[devenyi1957]]." Keep "German pathology journal" only if the catalog record confirms it.
+
+## Patterns
+
+The main risk is the site's rule of quoting figures from abstracts. Several figures match the abstract but are qualified by the full text. In luo2022 the 15-year figure is 38.1%, not 39%; the 14.5% and 6.6% are shares of patients with recorded status (12.4% and 5.9% of all 290); and the radiotherapy benefit appears only in a multivariate model after matching, with no difference in unadjusted survival (144 vs 136 months, P=0.845) or in cancer-specific survival. In kong2015 the 27% metastasis rate is 12 of the 44 patients followed, not of 48. In michal2026 the "185 cases" describes the pooled clinical analysis, while survival figures come from the 69 cases with survival data, the age cut-off is 25 or under in the text, and the 31, 38 and 45 month medians rest on 6, 14 and 8 cases. In chamberlain2020 a background sentence of the abstract was read as the study's result. Two other figures need context: zhang2017 gives 0.013 per 100,000 separately for men and women rather than as one overall rate, and reports 2012 rates of 0.058 and 0.025, so "one in 7.7 million" is a 40-year average; giridhar2019 also reports that adjuvant radiation and chemotherapy were associated with worse survival in univariate analysis, which the site omits. A second pattern is a citation attached to a sentence whose extra detail comes from somewhere else (ATF1, epithelial-myoepithelial carcinoma, "second opinion", "single center") or to a superlative the paper does not make ("rarest", "largest", "current name at every site"). Twenty-one of the 34 papers could be checked against the abstract only. Fetching worked for zhang2017 (tables not retrievable), chamberlain2020 and flucke2011, and failed for tandon2026, jo2015 and crissman1977; devenyi1957 has no abstract at all.
+
+
+## Corrections applied by Claude on 2026-11-11
+
+The list above is the checker's. These are the changes made to the site in
+response (`site/content.py`, `site/content_pages.py`, `site/pages_more.py`):
+
+- Chamberlain 2020: "40 to 45% recurred" replaced with the series' own result,
+  13 of 24 patients (54.2%) relapsed, 3 locally and 10 with metastases.
+- Luo 2022: 15-year survival changed from 39% to 38%, the full-text figure.
+  Node and distant-spread shares now say they are of patients with a recorded
+  stage. The radiotherapy benefit now says it appeared only after adjustment.
+- Michal 2026: the sarcoma proposal is limited to malignant tumors with EWSR1
+  or FUS fusions. "Biologically unrelated" changed to "epigenetically
+  unrelated". The outcomes table now says 69 of the 185 had survival data.
+- Kong 2015: the 27% is now given as 12 of the 44 patients with follow-up.
+- ATF1 as an EWSR1 partner is now cited to Flucke 2012.
+- The definition, the older name, the registry code and the separation from
+  epithelial-myoepithelial carcinoma are each cited to a source that states
+  them. The code is given as 8982, without the "/3".
+- "Rarest and least studied" (skin) and "recognized only in 2003 and 2004"
+  were removed in favour of what the sources say.
+- "The largest soft-tissue series" is now "a 101-tumor soft-tissue series".
+- "Often a second opinion" is now the finding it rested on: in one series most
+  tumors had first been given another diagnosis.
+- The National Cancer Database survival figures are no longer called overall
+  survival, because the abstract does not say.
+- Added from the full text of Zhang 2017: the 2012 incidence rates.
+
+Left as it was: the 1957 paper is described as appearing in a German pathology
+journal. The checker's input lacked the journal name, which the catalog has
+(Zentralblatt fur allgemeine Pathologie).

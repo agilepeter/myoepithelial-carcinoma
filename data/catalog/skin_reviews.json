@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pmid:41239844",
+    "n_cases_reviewed": 26,
+    "findings": [
+      "Tabulated review of 26 previously published primary cutaneous myoepithelial carcinoma cases: ages ranged from 21 days to 85 years (median 58 years; mean 50.56 years, SD 24.70), with a male-to-female ratio of approximately 1:1.",
+      "Most patients were treated with primary excision; three received systemic therapy (one palliative chemotherapy, one resection plus adjuvant chemotherapy, one neoadjuvant chemotherapy plus resection); none received adjuvant radiotherapy.",
+      "Counted from the paper's Table 1 (the paper itself gives no totals): 8 of 26 cases are marked as having metastasis at presentation (5 of these as lymph node), 5 are marked as developing new metastases and 2 as local recurrence; follow-up, where reported, ranged from 3 to 132 months.",
+      "Reported sites include the back, the head, groin and lower extremities; tumor sizes in Table 1 ranged from 0.7 to 20 cm where reported.",
+      "A broad-spectrum keratin stain was positive in most cases tested, with two exceptions; calponin, S100 and p63 were variably positive or negative; desmin and melanocytic markers were negative in every case in which they were tested.",
+      "A BRAF V600E mutation was reported in one case; RNA fusion data were not available for any of the 26 reviewed cases."
+    ]
+  },
+  {
+    "id": "pmid:40110023",
+    "n_cases_reviewed": null,
+    "findings": [
+      "Narrative discussion citing earlier reports, not a tabulated review of cases.",
+      "States that only 14 cutaneous myoepithelial carcinoma cases had been reported before this one (15 including it).",
+      "States that most reported cases involved female patients, suggesting a slight female predominance.",
+      "Reported age range 2.5 to 85 years, with a median age of 50 years.",
+      "States that cutaneous myoepithelial carcinoma appears to have a lower recurrence rate than its soft tissue counterpart (no figure given).",
+      "States that if complete resection is ultimately achieved before clinical metastasis, prognosis is good even after an inadequate first resection or a local recurrence."
+    ]
+  },
+  {
+    "id": "pmid:33015265",
+    "n_cases_reviewed": null,
+    "findings": [
+      "Narrative discussion citing earlier reports, not a tabulated review of cases; states that fewer than 15 cutaneous cases had been reported.",
+      "Postsurgical local recurrence reported in up to 30% of cases and metastases in up to 15%; the authors note the true rates are difficult to estimate given the rarity of the tumor.",
+      "Most commonly reported on the head and neck and the lower extremities; slight female predominance; bimodal age distribution (before adulthood or after the fifth to sixth decades).",
+      "Reported tumor sizes range from 0.7 to 7 cm.",
+      "Surgical removal with clear margins is the treatment of choice, but no clear recommendation exists for margin width; PET scan and sentinel lymph node biopsy are considered advisable.",
+      "Chemotherapy and radiation results are described as variable and often ineffective; radiation monotherapy for recurrent or metastatic disease gave no significant benefit; Mohs surgery had not been described for myoepithelial carcinoma."
+    ]
+  }
+]

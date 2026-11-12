@@ -1,0 +1,495 @@
+{
+  "fetched_at": "2026-11-11T16:08:54Z",
+  "systems": {
+    "DOID": [
+      {
+        "code": "DOID:4838",
+        "definition": "A carcinoma that derives_from myoepithelial cells.",
+        "name": "myoepithelial carcinoma"
+      },
+      {
+        "code": "DOID:5309",
+        "definition": "",
+        "name": "epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code": "DOID:6776",
+        "definition": "A breast carcinome that is composed entirely or almost entirely of malignant spindle cells with myoepithelial differentiation.",
+        "name": "breast myoepithelial carcinoma"
+      }
+    ],
+    "EFO": [
+      {
+        "code": "EFO:1000119",
+        "definition": "A rare benign tumor composed of sheets and islands of spindle, plasmacytoid, epithelioid, and clear cells that exhibit myoepithelial but not ductal differentiation. The average age of patients has been reported as 44 years. Clinically, these tumors present as asymptomatic masses. Discrimination between myoepithelioma and myoepithelial carcinoma is based primarily on the infiltrative growth of the ",
+        "name": "Benign Salivary Gland Myoepithelioma"
+      },
+      {
+        "code": "MONDO:0003158",
+        "definition": "An infiltrating malignant tumor characterized by the presence of atypical cells with myoepithelial differentiation. Representative examples include malignant breast myoepithelioma and salivary gland myoepithelial carcinoma.",
+        "name": "malignant myoepithelioma"
+      },
+      {
+        "code": "MONDO:0020697",
+        "definition": "A lung carcinoma arising within the bronchi or bronchial tubes. It is characterized by the presence of myoepithelial cells, spindle cells, clear cells, and duct-forming epithelial cells. Surgical resection may be curative.",
+        "name": "lung epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0003389",
+        "definition": "A malignant neoplasm which occurs mostly in the major salivary glands (most frequently in the parotid gland), but also in the minor salivary glands of the oral mucosa and the tracheobronchial tree. It is characterized by the presence of ductal structures which are lined by an inner layer of cuboidal epithelial-type cells and an outer layer of myoepithelial cells with clear or eosinophilic cytoplas",
+        "name": "epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0020694",
+        "definition": "A carcinoma that arises from the salivary glands, most often the parotid gland. It presents as a slow growing and painless mass. It is characterized by the presence of duct-like structures lined by two layers of cells, an inner layer composed of epithelial-type cells and an outer layer composed of clear, myoepithelial-type cells.",
+        "name": "salivary gland epithelial myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0003990",
+        "definition": "An invasive malignant tumor that arises from the breast. It is characterized by the presence of spindle-shaped myoepithelial cells. Mitoses are present. Rarely, local recurrences and distant metastases have been reported.",
+        "name": "malignant breast myoepithelioma"
+      },
+      {
+        "code": "MONDO:0002380",
+        "definition": "A benign or malignant tumor characterized by the presence of cells that show myoepithelial differentiation. Based on its morphologic features, it is classified as benign or malignant. A representative example of benign myoepithelioma is benign salivary gland myoepithelioma. Representative examples of malignant myoepithelioma or myoepithelial carcinoma are malignant breast myoepithelioma and saliva",
+        "name": "myoepithelial tumor"
+      }
+    ],
+    "MONDO": [
+      {
+        "code": "MONDO:0003158",
+        "definition": "An infiltrating malignant tumor characterized by the presence of atypical cells with myoepithelial differentiation. Representative examples include malignant breast myoepithelioma and salivary gland myoepithelial carcinoma.",
+        "name": "malignant myoepithelioma"
+      },
+      {
+        "code": "MONDO:0020694",
+        "definition": "A carcinoma that arises from the salivary glands, most often the parotid gland. It presents as a slow growing and painless mass. It is characterized by the presence of duct-like structures lined by two layers of cells, an inner layer composed of epithelial-type cells and an outer layer composed of clear, myoepithelial-type cells.",
+        "name": "salivary gland epithelial myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0020697",
+        "definition": "A lung carcinoma arising within the bronchi or bronchial tubes. It is characterized by the presence of myoepithelial cells, spindle cells, clear cells, and duct-forming epithelial cells. Surgical resection may be curative.",
+        "name": "lung epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0003389",
+        "definition": "A malignant neoplasm which occurs mostly in the major salivary glands (most frequently in the parotid gland), but also in the minor salivary glands of the oral mucosa and the tracheobronchial tree. It is characterized by the presence of ductal structures which are lined by an inner layer of cuboidal epithelial-type cells and an outer layer of myoepithelial cells with clear or eosinophilic cytoplas",
+        "name": "epithelial-myoepithelial carcinoma"
+      },
+      {
+        "code": "MONDO:0003990",
+        "definition": "An invasive malignant tumor that arises from the breast. It is characterized by the presence of spindle-shaped myoepithelial cells. Mitoses are present. Rarely, local recurrences and distant metastases have been reported.",
+        "name": "malignant breast myoepithelioma"
+      },
+      {
+        "code": "MONDO:0002380",
+        "definition": "A benign or malignant tumor characterized by the presence of cells that show myoepithelial differentiation. Based on its morphologic features, it is classified as benign or malignant. A representative example of benign myoepithelioma is benign salivary gland myoepithelioma. Representative examples of malignant myoepithelioma or myoepithelial carcinoma are malignant breast myoepithelioma and saliva",
+        "name": "myoepithelial tumor"
+      }
+    ],
+    "MeSH": [
+      {
+        "code": "D009208",
+        "name": "Myoepithelioma",
+        "url": "http://id.nlm.nih.gov/mesh/D009208"
+      }
+    ],
+    "NCI Thesaurus": [
+      {
+        "code": "C14164",
+        "definition": "Derived from epithelial cells and destined to become a part of the muscular system; having the characteristics of both muscle and epithelium.",
+        "name": "Myoepithelial",
+        "synonyms": [
+          "Myoepithelial"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C14164"
+      },
+      {
+        "code": "C33152",
+        "definition": "A contractile cell found between the secretory cells and basement membrane of exocrine glands. Each myoepithelial cell has long cytoplasmic processes that wrap around a secretory unit. The contraction of the myoepithelial processes forces the secretory product from the secretory unit into its duct.",
+        "name": "Myoepithelial Cell",
+        "synonyms": [
+          "Basket Cell",
+          "Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C33152"
+      },
+      {
+        "code": "C40392",
+        "definition": "A benign or malignant tumor characterized by the presence of cells that show myoepithelial differentiation. Based on its morphologic features, it is classified as benign or malignant. A representative example of benign myoepithelioma is benign salivary gland myoepithelioma. Representative examples of malignant myoepithelioma or myoepithelial carcinoma are malignant breast myoepithelioma and salivary gland myoepithelial carcinoma.",
+        "name": "Myoepithelial Tumor",
+        "synonyms": [
+          "Myoepithelial Neoplasm",
+          "Myoepithelial Tumor",
+          "Myoepithelial Tumor of Soft Tissue",
+          "Myoepithelial tumor",
+          "Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40392"
+      },
+      {
+        "code": "C142828",
+        "definition": "A very rare, benign or malignant lung tumor with myoepithelial differentiation.",
+        "name": "Lung Myoepithelial Tumor",
+        "synonyms": [
+          "Lung Myoepithelial Tumor"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C142828"
+      },
+      {
+        "code": "C142830",
+        "definition": "A very rare malignant lung tumor with myoepithelial differentiation.",
+        "name": "Lung Myoepithelial Carcinoma",
+        "synonyms": [
+          "Lung Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C142830"
+      },
+      {
+        "code": "C189001",
+        "definition": "A myoepithelial tumor that occurs during childhood.",
+        "name": "Childhood Myoepithelial Tumor",
+        "synonyms": [
+          "Childhood Myoepithelial Tumor",
+          "Childhood Myoepithelial Tumor of Soft Tissue",
+          "Pediatric Myoepithelial Tumor",
+          "Pediatric Myoepithelial Tumor of Soft Tissue"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C189001"
+      },
+      {
+        "code": "C40389",
+        "definition": "A benign or malignant tumor that arises from the breast and originates from or is composed of myoepithelial cells.  Representative examples include adenomyoepithelioma, myoepitheliosis, and malignant myoepithelioma.",
+        "name": "Breast Myoepithelial Tumor",
+        "synonyms": [
+          "Breast Myoepithelial Neoplasm",
+          "Breast Myoepithelial Tumor"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40389"
+      },
+      {
+        "code": "C4199",
+        "definition": "A malignant neoplasm which occurs mostly in the major salivary glands (most frequently in the parotid gland), but also in the minor salivary glands of the oral mucosa and the tracheobronchial tree. It is characterized by the presence of ductal structures which are lined by an inner layer of cuboidal epithelial-type cells and an outer layer of myoepithelial cells with clear or eosinophilic cytoplasm.",
+        "name": "Epithelial-Myoepithelial Carcinoma",
+        "synonyms": [
+          "Epithelial-Myoepithelial Carcinoma",
+          "Epithelial-myoepithelial carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C4199"
+      },
+      {
+        "code": "C36769",
+        "definition": "",
+        "name": "Abnormal Myoepithelial Cell",
+        "synonyms": [
+          "Abnormal Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C36769"
+      },
+      {
+        "code": "C36770",
+        "definition": "",
+        "name": "Neoplastic Myoepithelial Cell",
+        "synonyms": [
+          "Neoplastic Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C36770"
+      },
+      {
+        "code": "C36780",
+        "definition": "",
+        "name": "Malignant Myoepithelial Cell",
+        "synonyms": [
+          "Malignant Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C36780"
+      },
+      {
+        "code": "C37168",
+        "definition": "",
+        "name": "Metaplastic Myoepithelial Cell",
+        "synonyms": [
+          "Metaplastic Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C37168"
+      },
+      {
+        "code": "C175274",
+        "definition": "A carcinoma that arises from the lacrimal gland and is characterized by the presence of a malignant cellular infiltrate exhibiting myoepithelial differentiation.",
+        "name": "Lacrimal Gland Myoepithelial Carcinoma",
+        "synonyms": [
+          "Lacrimal Gland Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C175274"
+      },
+      {
+        "code": "C35700",
+        "definition": "A locally aggressive carcinoma that arises from the salivary glands, predominantly the parotid gland. It is characterized by the presence of a malignant cellular infiltrate exhibiting myoepithelial differentiation. Patients usually present with a painless mass.",
+        "name": "Salivary Gland Myoepithelial Carcinoma",
+        "synonyms": [
+          "Salivary Gland Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C35700"
+      },
+      {
+        "code": "C40393",
+        "definition": "A benign or malignant tumor that arises from the salivary glands.  It is characterized by the presence of neoplastic cells with myoepithelial differentiation.  This category includes benign myoepithelioma and myoepithelial carcinoma.",
+        "name": "Salivary Gland Myoepithelial Tumor",
+        "synonyms": [
+          "Salivary Gland Myoepithelial Neoplasm",
+          "Salivary Gland Myoepithelial Tumor"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40393"
+      },
+      {
+        "code": "C45545",
+        "definition": "A lung carcinoma arising within the bronchi or bronchial tubes.  It is characterized by the presence of myoepithelial cells, spindle cells, clear cells, and duct-forming epithelial cells.  Surgical resection may be curative.",
+        "name": "Lung Epithelial-Myoepithelial Carcinoma",
+        "synonyms": [
+          "Lung Epithelial-Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C45545"
+      },
+      {
+        "code": "C40411",
+        "definition": "",
+        "name": "Salivary Gland Myoepithelial Cell",
+        "synonyms": [
+          "Salivary Gland Myoepithelial Cell"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40411"
+      },
+      {
+        "code": "C175288",
+        "definition": "A rare slow-growing carcinoma that arises from the lacrimal gland and is characterized by the presence of duct-like structures lined by two layers of cells; an inner layer composed of epithelial-type cells and an outer layer composed of clear, myoepithelial-type cells.",
+        "name": "Lacrimal Gland Epithelial-Myoepithelial Carcinoma",
+        "synonyms": [
+          "Lacrimal Gland Epithelial-Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C175288"
+      },
+      {
+        "code": "C35701",
+        "definition": "A carcinoma that arises from the salivary glands, most often the parotid gland.  It presents as a slow growing and painless mass.  It is characterized by the presence of duct-like structures lined by two layers of cells, an inner layer composed of epithelial-type cells and an outer layer composed of clear, myoepithelial-type cells.",
+        "name": "Salivary Gland Epithelial-Myoepithelial Carcinoma",
+        "synonyms": [
+          "Salivary Gland Epithelial Myoepithelial Carcinoma",
+          "Salivary Gland Epithelial-Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C35701"
+      },
+      {
+        "code": "C7596",
+        "definition": "An infiltrating malignant tumor characterized by the presence of atypical cells with myoepithelial differentiation. Representative examples include malignant breast myoepithelioma and salivary gland myoepithelial carcinoma.",
+        "name": "Malignant Myoepithelioma",
+        "synonyms": [
+          "MYOEPITHELIOMA, MALIGNANT",
+          "Malignant Myoepithelioma",
+          "Malignant myoepithelioma",
+          "Myoepithelial Carcinoma",
+          "Myoepithelial carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C7596"
+      },
+      {
+        "code": "C40395",
+        "definition": "An invasive malignant tumor that arises from the breast.  It is characterized by the presence of spindle-shaped myoepithelial cells.  Mitoses are present.  Rarely, local recurrences and distant metastases have been reported.",
+        "name": "Breast Malignant Myoepithelioma",
+        "synonyms": [
+          "Breast Malignant Myoepithelioma",
+          "Breast Myoepithelial Carcinoma",
+          "Malignant Breast Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40395"
+      },
+      {
+        "code": "C162732",
+        "definition": "The reemergence of a malignant myoepithelioma after a period of remission.",
+        "name": "Recurrent Malignant Myoepithelioma",
+        "synonyms": [
+          "Recurrent Malignant Myoepithelioma",
+          "Recurrent Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C162732"
+      },
+      {
+        "code": "C162733",
+        "definition": "A malignant myoepithelioma that does not respond to treatment.",
+        "name": "Refractory Malignant Myoepithelioma",
+        "synonyms": [
+          "Refractory Malignant Myoepithelioma",
+          "Refractory Myoepithelial Carcinoma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C162733"
+      },
+      {
+        "code": "C124607",
+        "definition": "A benign neoplasm characterized by the proliferation of cells with myoepithelial differentiation around spaces which are lined by epithelial cells.",
+        "name": "Experimental Organism Benign Adenomyoepithelioma",
+        "synonyms": [
+          "ADENOMYOEPITHELIOMA, BENIGN",
+          "Experimental Organism Benign Adenomyoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C124607"
+      },
+      {
+        "code": "C142829",
+        "definition": "A very rare benign lung tumor with myoepithelial differentiation.",
+        "name": "Lung Myoepithelioma",
+        "synonyms": [
+          "Benign Lung Myoepithelioma",
+          "Lung Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C142829"
+      },
+      {
+        "code": "C167370",
+        "definition": "A benign skin neoplasm composed exclusively of myoepithelial cells.",
+        "name": "Skin Myoepithelioma",
+        "synonyms": [
+          "Cutaneous Myoepithelioma",
+          "Skin Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C167370"
+      },
+      {
+        "code": "C175272",
+        "definition": "A benign neoplasm with myoepithelial differentiation arising from the lacrimal gland. It lacks an infiltrative growth pattern and does not metastasize.",
+        "name": "Lacrimal Gland Myoepithelioma",
+        "synonyms": [
+          "Lacrimal Gland Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C175272"
+      },
+      {
+        "code": "C40385",
+        "definition": "A multifocal neoplastic process characterized by the proliferation of spindle to cuboidal myoepithelial cells within and/or around small breast ducts.",
+        "name": "Breast Myoepitheliosis",
+        "synonyms": [
+          "Breast Myoepitheliosis"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40385"
+      },
+      {
+        "code": "C40386",
+        "definition": "A neoplastic process characterized by the proliferation of spindle to cuboidal myoepithelial cells in and around small breast ducts exhibiting cytologic atypia and mitotic activity.",
+        "name": "Breast Atypical Myoepitheliosis",
+        "synonyms": [
+          "Atypical Breast Myoepitheliosis",
+          "Breast Atypical Myoepitheliosis"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40386"
+      },
+      {
+        "code": "C40387",
+        "definition": "A neoplastic process characterized by the proliferation of spindle to cuboidal myoepithelial cells within small breast ducts.",
+        "name": "Breast Intraductal Myoepitheliosis",
+        "synonyms": [
+          "Breast Intraductal Myoepitheliosis",
+          "Intraductal Breast Myoepitheliosis"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40387"
+      },
+      {
+        "code": "C40388",
+        "definition": "A neoplastic process characterized by the proliferation of spindle to cuboidal myoepithelial cells around small breast ducts.",
+        "name": "Breast Periductal Myoepitheliosis",
+        "synonyms": [
+          "Breast Periductal Myoepitheliosis",
+          "Periductal Breast Myoepitheliosis"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C40388"
+      },
+      {
+        "code": "C5143",
+        "definition": "An adenomyoepithelioma of the breast in which the epithelial, myoepithelial, or both components have undergone malignant transformation.  Such cases may follow an aggressive clinical course, including recurrences and local and distant metastases.",
+        "name": "Malignant Breast Adenomyoepithelioma",
+        "synonyms": [
+          "Adenomyoepithelioma with carcinoma",
+          "Breast Adenomyoepithelioma with Malignant Change",
+          "Malignant Adenomyoepithelioma of Breast",
+          "Malignant Adenomyoepithelioma of the Breast",
+          "Malignant Breast Adenomyoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C5143"
+      },
+      {
+        "code": "C5144",
+        "definition": "A benign, nodular tumor that arises from the breast parenchyma.  It is characterized by the proliferation of myoepithelial cells around spaces that are lined by epithelial cells.  Occasionally, adenomyoepitheliomas may undergo malignant transformation.",
+        "name": "Benign Breast Adenomyoepithelioma",
+        "synonyms": [
+          "Benign Adenomyoepithelioma of Breast",
+          "Benign Adenomyoepithelioma of the Breast",
+          "Benign Breast Adenomyoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C5144"
+      },
+      {
+        "code": "C5978",
+        "definition": "A rare benign tumor composed of sheets and islands of spindle, plasmacytoid, epithelioid, and clear cells that exhibit myoepithelial but not ductal differentiation. The average age of patients has been reported as 44 years. Clinically, these tumors present as asymptomatic masses. Discrimination between myoepithelioma and myoepithelial carcinoma is based primarily on the infiltrative growth of the latter.",
+        "name": "Salivary Gland Myoepithelioma",
+        "synonyms": [
+          "Benign Myoepithelioma of the Salivary Gland",
+          "Benign Salivary Gland Myoepithelioma",
+          "Salivary Gland Myoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C5978"
+      },
+      {
+        "code": "C6899",
+        "definition": "A usually benign tumor arising from the breast. It is characterized by the proliferation of cells with myoepithelial differentiation around spaces which are lined by epithelial cells. Rarely, the epithelial and/or myoepithelial cells may undergo malignant transformation. Cases with malignant transformation may follow an aggressive clinical course, including recurrences and local and distant metastases.",
+        "name": "Breast Adenomyoepithelioma",
+        "synonyms": [
+          "Adenomyoepithelioma",
+          "Adenomyoepithelioma of the Breast",
+          "Breast Adenomyoepithelioma"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C6899"
+      },
+      {
+        "code": "C7442",
+        "definition": "A tumor with myoepithelial differentiation that lacks an infiltrative growth pattern and does not metastasize.",
+        "name": "Benign Myoepithelioma",
+        "synonyms": [
+          "Benign Myoepithelioma",
+          "MYOEPITHELIOMA, BENIGN"
+        ],
+        "url": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=C7442"
+      }
+    ],
+    "OncoTree": [
+      {
+        "code": "STMYEC",
+        "main_type": "Soft Tissue Sarcoma",
+        "name": "Soft Tissue Myoepithelial Carcinoma",
+        "parent": "SOFT_TISSUE",
+        "tissue": "Soft Tissue",
+        "url": "https://oncotree.mskcc.org/?field=CODE&search=STMYEC"
+      },
+      {
+        "code": "MYEC",
+        "main_type": "Salivary Gland Cancer",
+        "name": "Myoepithelial Carcinoma",
+        "parent": "SACA",
+        "tissue": "Head and Neck",
+        "url": "https://oncotree.mskcc.org/?field=CODE&search=MYEC"
+      },
+      {
+        "code": "EMYOCA",
+        "main_type": "Head and Neck Cancer",
+        "name": "Epithelial-Myoepithelial Carcinoma",
+        "parent": "OHNCA",
+        "tissue": "Head and Neck",
+        "url": "https://oncotree.mskcc.org/?field=CODE&search=EMYOCA"
+      }
+    ],
+    "Wikidata": [
+      {
+        "code": "Q18556495",
+        "definition": "carcinoma that derives from myoepithelial cells",
+        "name": "myoepithelial carcinoma",
+        "url": null
+      }
+    ]
+  }
+}

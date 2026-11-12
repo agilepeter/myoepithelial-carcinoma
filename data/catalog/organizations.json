@@ -1,0 +1,142 @@
+[
+  {
+    "checked": "2026-11-11",
+    "expect": "curemec",
+    "group": "This disease",
+    "name": "cureMEC: The Myoepithelial Carcinoma Project",
+    "ok": true,
+    "page_title": "cureMEC | Research &amp; Support for Myoepithelial Carcinoma",
+    "url": "https://www.curemec.org/",
+    "what": "The patient-driven research project for this disease. Research, biospecimens and support."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "rare cancer",
+    "group": "Rare cancers",
+    "name": "Rare Cancer Research Foundation",
+    "ok": true,
+    "page_title": "Rare Cancer Research Foundation",
+    "url": "https://rarecancer.org/",
+    "what": "Funds rare cancer research and runs tissue donation programs. A named collaborator of cureMEC."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "rare tumor",
+    "group": "Rare cancers",
+    "name": "NCI MyPART: Pediatric and Adult Rare Tumor Network",
+    "ok": true,
+    "page_title": "Pediatric and Adult Rare Tumor Network - NCI",
+    "url": "https://www.cancer.gov/pediatric-adult-rare-tumor",
+    "what": "A U.S. National Cancer Institute network that studies rare tumors and sees patients."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "rare",
+    "group": "Rare cancers",
+    "name": "National Organization for Rare Disorders (NORD)",
+    "ok": true,
+    "page_title": "National Organization for Rare Disorders | NORD",
+    "url": "https://rarediseases.org/",
+    "what": "Information, patient assistance programs and advocacy for rare diseases in the United States."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "rare diseases",
+    "group": "Rare cancers",
+    "name": "Genetic and Rare Diseases Information Center (GARD)",
+    "ok": true,
+    "page_title": "Genetic and Rare Diseases Information Center | GARD",
+    "url": "https://rarediseases.info.nih.gov/",
+    "what": "A U.S. National Institutes of Health information service on rare diseases."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "sarcoma",
+    "group": "Soft tissue",
+    "name": "Sarcoma Foundation of America",
+    "ok": true,
+    "page_title": "SFA - Enhancing Sarcoma Lives.",
+    "url": "https://www.curesarcoma.org/",
+    "what": "Research funding and patient resources for sarcoma. Soft-tissue myoepithelial carcinoma is treated at sarcoma centers."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "sarcoma",
+    "group": "Soft tissue",
+    "name": "Sarcoma UK",
+    "ok": true,
+    "page_title": "Sarcoma UK | Information, Support and Research",
+    "url": "https://sarcoma.org.uk/",
+    "what": "Information, a support line and research funding for sarcoma in the United Kingdom."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "salivary",
+    "group": "Salivary glands",
+    "name": "Salivary Gland Cancer UK",
+    "ok": true,
+    "page_title": "Salivary Gland Cancer UK",
+    "url": "https://www.salivaryglandcancer.uk/",
+    "what": "A charity for people with salivary gland cancers, including the rarer types."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "head",
+    "group": "Salivary glands",
+    "name": "Head and Neck Cancer Alliance",
+    "ok": true,
+    "page_title": "Home | Head &amp; Neck Cancer Alliance",
+    "url": "https://www.headandneck.org/",
+    "what": "Support, education and advocacy for head and neck cancers in the United States."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "nci",
+    "group": "General cancer support",
+    "name": "National Cancer Institute: contact and information service",
+    "ok": true,
+    "page_title": "Contact NCI - NCI",
+    "url": "https://www.cancer.gov/contact",
+    "what": "Cancer information specialists by phone, chat and email."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "cancer",
+    "group": "General cancer support",
+    "name": "CancerCare",
+    "ok": true,
+    "page_title": "Support Services for People Affected by Cancer | CancerCare",
+    "url": "https://www.cancercare.org/",
+    "what": "Free counseling, support groups and financial help from oncology social workers."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "triage",
+    "group": "General cancer support",
+    "name": "Triage Cancer",
+    "ok": true,
+    "page_title": "Insurance - Employment - Finances | Triage Cancer",
+    "url": "https://triagecancer.org/",
+    "what": "Help with insurance, employment and money after a cancer diagnosis."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "macmillan",
+    "group": "General cancer support",
+    "name": "Macmillan Cancer Support",
+    "ok": true,
+    "page_title": "Macmillan Cancer Support | The UK&#39;s leading cancer care charity",
+    "url": "https://www.macmillan.org.uk/",
+    "what": "Information, a support line and financial guidance in the United Kingdom."
+  },
+  {
+    "checked": "2026-11-11",
+    "expect": "988",
+    "group": "In a crisis",
+    "name": "988 Suicide and Crisis Lifeline",
+    "ok": true,
+    "page_title": "988 Lifeline - If you need emotional support, reach out to the national mental health hotline: 988.",
+    "url": "https://988lifeline.org/",
+    "what": "Call or text 988 in the United States, at any hour."
+  }
+]

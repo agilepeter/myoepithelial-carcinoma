@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this catalog or these scripts, please cite it as below."
+type: dataset
+title: "Myoepithelial carcinoma: a reference to the published research"
+abstract: >-
+  A catalog of the published research on myoepithelial carcinoma, a rare
+  cancer, compiled from open sources by a patient: bibliographic records for
+  10,435 works, 527 registered trials, a registry of 479
+  published single-patient reports, and tables of treatments, stains and
+  look-alike tumors extracted from the literature, with the scripts that
+  gather the records and build the reference site. Abstracts and full text
+  are not included.
+authors:
+  - family-names: Saddington
+    given-names: Peter
+url: "https://staas.fund/myoepithelial-carcinoma/"
+repository-code: "https://github.com/agilepeter/myoepithelial-carcinoma"
+license:
+  - CC-BY-4.0
+  - MIT
+version: "2026-11-12"
+date-released: "2026-11-12"
+keywords:
+  - myoepithelial carcinoma
+  - malignant myoepithelioma
+  - rare cancer
+  - bibliography
+  - case registry
+  - open data

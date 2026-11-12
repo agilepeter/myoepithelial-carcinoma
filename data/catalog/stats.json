@@ -1,0 +1,140 @@
+{
+  "built_at": "2026-11-11T16:13:45Z",
+  "by_focus": {
+    "primary": 281,
+    "secondary": 2232
+  },
+  "by_source": {
+    "europepmc": 5835,
+    "openalex": 7996,
+    "pubmed": 3942,
+    "semanticscholar": 1929
+  },
+  "by_tier": {
+    "core": 1366,
+    "mention": 4512,
+    "related": 4557
+  },
+  "core": {
+    "animal_studies": 50,
+    "by_decade": {
+      "1950s": 1,
+      "1970s": 4,
+      "1980s": 11,
+      "1990s": 89,
+      "2000s": 261,
+      "2010s": 543,
+      "2020s": 451
+    },
+    "by_language": {
+      "cs": 3,
+      "de": 20,
+      "en": 1155,
+      "en, es": 2,
+      "es": 7,
+      "fr": 7,
+      "id": 4,
+      "it": 3,
+      "ja": 14,
+      "jbo": 1,
+      "ko": 4,
+      "nl": 3,
+      "no": 1,
+      "pl": 1,
+      "pt": 2,
+      "ru": 4,
+      "sr": 2,
+      "tr": 4,
+      "unknown": 95,
+      "zh": 34
+    },
+    "by_site_tag": {
+      "bone": 137,
+      "breast": 248,
+      "gyn": 56,
+      "head_neck_other": 221,
+      "lung": 169,
+      "pediatric": 98,
+      "salivary": 788,
+      "skin": 152,
+      "soft_tissue": 244
+    },
+    "by_type": {
+      "Abstract": 2,
+      "Book Chapter": 2,
+      "Case Reports": 417,
+      "Clinical Trial, Phase II": 1,
+      "Comment": 2,
+      "Comparative Study": 11,
+      "English Abstract": 22,
+      "Journal Article": 333,
+      "JournalArticle": 4,
+      "Letter": 11,
+      "LettersAndComments": 1,
+      "Preprint": 8,
+      "Published Erratum": 2,
+      "Research Support, Non-U.S. Gov't": 1,
+      "Review": 21,
+      "Systematic Review": 2,
+      "article": 366,
+      "book-chapter": 9,
+      "conference-abstract": 26,
+      "conference-paper": 4,
+      "dataset": 3,
+      "dissertation": 8,
+      "editorial": 2,
+      "letter": 4,
+      "other": 12,
+      "peer-review": 7,
+      "preprint": 1,
+      "reference-entry": 13,
+      "report": 1,
+      "research-article": 1,
+      "supplementary-materials": 1,
+      "unknown": 68
+    },
+    "case_reports": 671,
+    "named_in_title": 834,
+    "no_site_tag": 106,
+    "reviews": 139,
+    "top_journals": {
+      "Cureus": 13,
+      "Genes, chromosomes & cancer": 12,
+      "Head and neck pathology": 31,
+      "Histopathology": 20,
+      "Human pathology": 12,
+      "International journal of surgical pathology": 9,
+      "Japanese Journal of Oral & Maxillofacial Surgery": 9,
+      "Journal of Clinical Oncology": 12,
+      "Journal of clinical pathology": 12,
+      "Journal of cutaneous pathology": 18,
+      "Lin chuang er bi yan hou tou jing wai ke za zhi = Journal of clinical otorhinolaryngology head and neck surgery": 11,
+      "Oral oncology": 9,
+      "Pathology international": 12,
+      "The American journal of surgical pathology": 32,
+      "Virchows Archiv : an international journal of pathology": 13
+    },
+    "with_abstract": 1116,
+    "year_range": [
+      1957,
+      2026
+    ]
+  },
+  "fulltext_in_europepmc": {
+    "core": 289,
+    "mention": 1749,
+    "related": 672
+  },
+  "open_access": {
+    "core": 638,
+    "mention": 3447,
+    "related": 1703
+  },
+  "single_source_only": {
+    "europepmc": 1128,
+    "openalex": 3425,
+    "pubmed": 415,
+    "semanticscholar": 287
+  },
+  "total": 10435
+}

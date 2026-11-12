@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# Recreated by the harvest scripts. They hold abstracts and full text,
+# which are not published in this repository.
+data/raw/
+data/fulltext/
+data/pdf/
+
+# The generated site: python site/build.py
+site/dist/
