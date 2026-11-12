@@ -445,7 +445,7 @@ def site_facts(B, S):
     facts = dict(S["ctx"])
     facts.update({
         "author": B.esc(C.AUTHOR), "story_url": C.STORY_URL, "about_url": C.ABOUT_URL, "changes_url": C.CHANGES_URL,
-        "contact_email": C.CONTACT_EMAIL, "contact_subject": C.CONTACT_SUBJECT,
+        "contact_email": C.CONTACT_EMAIL, "contact_subject": C.CONTACT_SUBJECT, "contact_spoken": C.CONTACT_SPOKEN,
         "n_checked": len(checks), "n_wrong_word": NUMBER_WORDS[wrong] if wrong < len(NUMBER_WORDS) else str(wrong),
         "n_full": sum(1 for v in checks if v["checked_against"] != "abstract only"),
         "n_abstract": sum(1 for v in checks if v["checked_against"] == "abstract only"),

@@ -20,6 +20,9 @@ CONTACT_URL = BASE_URL + "about/#contact"
 # The one email address the site prints. The build stops on any other address in the output.
 CONTACT_EMAIL = "peters@staas.fund"
 CONTACT_SUBJECT = "Myoepithelial%20carcinoma%20reference"
+# The same address in words. Cloudflare hides email addresses from programs that collect them and
+# restores them with a script, so a reader without scripts needs it spelled out.
+CONTACT_SPOKEN = "peters at staas dot fund"
 ABOUT_URL = BASE_URL + "about/"
 CHANGES_URL = BASE_URL + "changes/"
 POST_URL = "https://theagilevc.substack.com/p/today-im-supposed-to-die-76"

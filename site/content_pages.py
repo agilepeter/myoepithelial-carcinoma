@@ -298,6 +298,8 @@ pages are public at <a href="{repo_url}">{repo_label}</a>.</p>
 <p>The text of the pages may be quoted with a link. Please ask before republishing it.</p>"""),
     ("contact", "Contact", """
 <p>Write to <a href="mailto:{contact_email}?subject={contact_subject}">{contact_email}</a>.</p>
+<p>Cloudflare hides the address from programs that collect email addresses, so it shows only where scripts are
+allowed. Written out, it is {contact_spoken}.</p>
 <p>It helps to say which page you mean and, for a correction, where the right figure can be read. Mail about this
 reference is read by {author}. He cannot give medical advice or comment on anyone's care.</p>"""),
 ]
